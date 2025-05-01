@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+        nodejs 'NodeJS' // Убедитесь, что у вас установлен NodeJS в Jenkins
+    }
     environment {
         DOCKER_HUB_CREDENTIALS = credentials('DOCKER_HUB_CREDENTIALS') // ID credentials в Jenkins
         DOCKER_IMAGE = 'unkabas/sneaker-app'

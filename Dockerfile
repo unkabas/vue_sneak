@@ -1,5 +1,5 @@
 # Этап сборки
-FROM node:18 AS build
+FROM node:23-alpine AS build
 WORKDIR /app
 COPY package*.json ./
 RUN npm ci --production && npm cache clean --force

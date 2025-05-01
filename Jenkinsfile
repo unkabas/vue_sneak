@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Install Dependencies') {
             steps {
-                sh 'npm ci --production'
+                sh 'npm install'
             }
         }
         stage('Build') {

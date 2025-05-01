@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/your-username/sneaker-app.git' // Замените на ваш репозиторий
+                git branch: 'main', url: 'https://github.com/unkabas/vue_sneak.git' // Замените на ваш репозиторий
             }
         }
         stage('Install Dependencies') {

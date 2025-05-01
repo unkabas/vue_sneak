@@ -2,7 +2,6 @@ pipeline {
     agent any
     tools {
         nodejs 'node' // Убедитесь, что у вас установлен NodeJS в Jenkins
-        Docker 'dock' // Убедитесь, что у вас установлен Docker в Jenkins
     }
     environment {
         DOCKER_HUB_CREDENTIALS = credentials('DOCKER_HUB_CREDENTIALS') // ID credentials в Jenkins
